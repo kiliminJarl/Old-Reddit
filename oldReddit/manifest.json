@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "Old Reddit",
+	"version": "0.5",
+
+	"description": "Chances the url for reddit.com to old.reddit.com",
+
+	"content_scripts": [
+		{
+			"matches": [
+				"*://www.reddit.com/*"
+			],
+			"js": ["jquery-3.4.1.js", "oldReddit.js"]
+		}
+	],
+	"browser_action" : {
+		"default_icon": "icon.png"
+	}
+}
